@@ -1,10 +1,7 @@
 package com.imooc.web.controller;
 
-import com.imooc.base.ApiResponse;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * Created by tianzeyu on 2018/3/19.
@@ -12,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HomeController {
     @GetMapping("/")
-    public String index(Model model) {
+    public String index() {
         return "index";
     }
 
